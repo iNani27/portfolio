@@ -3,7 +3,7 @@
 // pour la connexion PDO
 require 'model/maPDOClass.php';
 // appel de la classe UserManagerClass
-// require 'model/UserManagerClass.php';
+require 'model/UserManagerClass.php';
 
 // Vérification de validité de la session
 if (!isset($_SESSION['maclef']) || $_SESSION['maclef'] != session_id()) {
