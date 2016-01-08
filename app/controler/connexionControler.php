@@ -6,9 +6,9 @@
  */
 
 // pour la connexion PDO
-require 'model/maPDOClass.php';
+require 'app/model/maPDOClass.php';
 // appel de la classe UserManagerClass
-require 'model/UserManagerClass.php';
+require 'app/model/UserManagerClass.php';
 
 
 // si il essaye de se déconnecter
@@ -41,5 +41,5 @@ if(isset($_POST['lelogin'])){
 // si il essaye de se connecter
 if(isset($_GET['connect'])){
     // appel de la vue
-    include("vue/connexionVue.php");
+    include("app/vue/connexionVue.php");
 }
