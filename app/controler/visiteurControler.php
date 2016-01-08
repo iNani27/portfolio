@@ -5,12 +5,12 @@
  */
 
 // pour la connexion PDO
-require 'model/maPDOClass.php';
+require 'app/model/maPDOClass.php';
 
 
 // on appel la vue pour les afficher
 
-include 'vue/utilisateurVue.php';
+include 'app/vue/utilisateurVue.php';
 
 
 
