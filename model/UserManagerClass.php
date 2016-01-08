@@ -23,6 +23,17 @@ class UserManagerClass {
         return $query->fetch(PDO::FETCH_ASSOC);
     }
     
+   /* public function recupRight($right){
+        $query = $this->db->prepare("SELECT * FROM tbl_user WHERE lelogin=? AND lepass=? wHERE right=?;");
+        $query->bindValue(1,$login,PDO::PARAM_STR);
+        $query->bindValue(2,$pass,PDO::PARAM_STR);
+        $query->bindValue(3,$pass,PDO::PARAM_INT);
+        $query->execute();
+        // récupère un tableau (dont le droit de l'utilisateur connecté)
+        return $query->fetch(PDO::FETCH_ASSOC);
+    }*/
+
+
     public static function decoUser(){
         $_SESSION = array();
         if (ini_get("session.use_cookies")) {

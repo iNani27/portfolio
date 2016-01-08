@@ -10,7 +10,7 @@ require 'model/maPDOClass.php';
 
 // on appel la vue pour les afficher
 
-// include 'vue/utilisateurVue.php';
+include 'vue/utilisateurVue.php';
 
-echo "Simple visitor";
+
 
