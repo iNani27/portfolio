@@ -1,0 +1,69 @@
+/* 
+    Document   : styles
+    Created on : 05-nov.-2015, 1:37:09
+    Author     : Isabelle Nani Dev
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    position: relative;
+    background:url(../img/pink.png) no-repeat;
+    background-size: cover;
+}
+#container{
+    width:33%;
+    margin:auto;
+}
+h1, h1 span.small{
+    font-family: "Lucida Console", Monaco, monospace;
+    color:white;
+}
+form.well{
+    background-color: Azure; 
+}
+h2{
+    padding: 1.7em;
+    background-color: MediumTurquoise; 
+    color: white;
+}
+.input-group{
+    margin: 1.6em 0;
+    padding: 1.1em;
+    background-color: MediumTurquoise; 
+}
+input[type="submit"]{
+    transition: all 0.5s ease 0s;
+    padding: .6em;
+    width: 100%;
+    background: Azure;
+    font-size:1.3em;
+}
+input[type=submit]:hover{
+    background:#CA1261;
+    color:white;
+}
+
+/* MDEIA QUERRIES */
+@media (max-width:940px){
+    #container{
+        width:43%;
+    }   
+}
+@media (max-width:640px){
+    #container{
+        width:63%;
+    }   
+}
+@media (max-width:360px){
+    #container{
+        width:83%;
+        margin-bottom: 140px;
+    } 
+    h2{
+        display:none;
+    }
+    .input-group{
+    margin: 1.2em 0;
+    }
+}
