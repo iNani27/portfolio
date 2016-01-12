@@ -8,14 +8,14 @@
 class Menu {
 
     public function __construct() {
-        $this->_db = new Database();
+        $this->db = MaPDO::getConnection($dsn,$util,$pass,$erreur);
     }
 
     public function getMenu() {
         $menu = array();
-        $resursa = $this->_db->query("SELECT * FROM tbl_menu WHERE parent_id=0");
+        $resursa = $this->db->query("SELECT * FROM tbl_menu WHERE parent_id=0");
         while ($row = $resursa->fetch(PDO::FETCH_ASSOC)) {
-            $resursa1 = $this->_db->query("SELECT * FROM tbl_menu WHERE parent_id=" . $row);
+            $resursa1 = $this->db->query("SELECT * FROM tbl_menu WHERE parent_id=" . $row);
             if ($resursa1->rowCount() > 0) {
                 $submenu = array();
                 while ($row1 = $resursa1->fetch(PDO::FETCH_ASSOC)) {
