@@ -1,10 +1,21 @@
 /* 
     Document   : styles
-    Created on : 05-nov.-2015, 1:37:09
+    Created on : 12-01-2016, 14:37:09
     Author     : Isabelle Nani Dev
     Description:
         Purpose of the stylesheet follows.
 */
+/* CONTENT */
+.back {margin-bottom: 20px;}
+/* MENU */
+#section1 {padding-top:50px;height:500px;color: #263238; background-color: #8C9EFF; /*#1E88E5;*/}
+#myModal {color: #000;}
+#section23 {padding-top:50px;height:500px;color: #263238; background-color: #82B1FF; /*#673ab7*/;}
+#section24 {padding-top:50px;height:500px;color: #263238; background-color: #B3E5FC; /*#ff9800;*/}
+#section25 {padding-top:50px;height:500px;color: #263238; background-color: #80DEEA; /*#00bcd4;*/}
+#section3 {padding-top:50px;height:500px;color: #263238; background-color: #80CBC4; /*#009688;*/}
+#section4 {padding-top:50px;height:500px;color: #263238; background-color: #64FFDA; /*aquamarine;*/}
+.navbar-right {margin-right:10px;}
 /* FORM Connexion */
 body{
     position: relative;
@@ -67,12 +78,3 @@ input[type=submit]:hover{
         margin: 1.2em 0;
     }
 }
-/* MENU */
-#section1 {padding-top:50px;height:500px;color: #263238; background-color: #8C9EFF; /*#1E88E5;*/}
-#myModal {color: #000;}
-#section23 {padding-top:50px;height:500px;color: #263238; background-color: #82B1FF; /*#673ab7*/;}
-#section24 {padding-top:50px;height:500px;color: #263238; background-color: #B3E5FC; /*#ff9800;*/}
-#section25 {padding-top:50px;height:500px;color: #263238; background-color: #80DEEA; /*#00bcd4;*/}
-#section3 {padding-top:50px;height:500px;color: #263238; background-color: #80CBC4; /*#009688;*/}
-#section4 {padding-top:50px;height:500px;color: #263238; background-color: #64FFDA; /*aquamarine;*/}
-.navbar-right {margin-right:10px;}
