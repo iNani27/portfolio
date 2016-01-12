@@ -42,7 +42,7 @@ include_once '/inc/head.php';
         </form>
     </div>
     <div class="row">
-        <button class="col-sm-3 col-sm-offset-9"><a href="./">Retour</a></button>
+        <button class="col-sm-3 col-sm-offset-9 back"><a href="http://localhost/portfolio/index.php">Retour</a></button>
     </div>
 </div>
 <?php
