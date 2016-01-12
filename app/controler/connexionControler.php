@@ -6,16 +6,16 @@
  */
 
 // pour la connexion PDO
-require 'app/model/maPDOClass.php';
+require 'PATH.app/model/maPDOClass.php';
 // appel de la classe UserManagerClass
-require 'app/model/UserManagerClass.php';
+require 'PATH.app/model/UserManagerClass.php';
 
 
 // si il essaye de se déconnecter
 if(isset($_GET['deconnect'])){
     // appel de la fonction static
     UserManagerClass::decoUser();
-    header("Location: ./");
+    header("Location: PATH");
 }
 
 
@@ -32,7 +32,7 @@ if(isset($_POST['lelogin'])){
         $_SESSION = $recup;
         $_SESSION['maclef']=session_id(); // validité de session
         // redirection
-        header("Location: ./");
+        header("Location: PATH");
     }else{ // sinon
         $erreur = "Login et/ou mot de passe incorrectes";
     }
@@ -41,5 +41,5 @@ if(isset($_POST['lelogin'])){
 // si il essaye de se connecter
 if(isset($_GET['connect'])){
     // appel de la vue
-    include("app/vue/connexionVue.php");
+    include("PATH.app/vue/connexionVue.php");
 }
